@@ -1,5 +1,5 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
     "python.defaultInterpreterPath": "C:\\Users\\SAE_F\\cpp\\mmap3\\palete_caixa\\.venv\\Scripts\\python.exe",
     "python.terminal.activateEnvironment": true,
     "python.analysis.autoImportCompletions": true
