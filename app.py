@@ -1,6 +1,7 @@
 import streamlit as st
 from paginas.listar_usuarios import pagina_listar
 from paginas.login import pagina_login
+from paginas.criar_usuario import pagina_criar
 
 st.set_page_config(page_title="Palete-Caixa",
                    page_icon="📦",  # 'Window + .' vai abrir uma janela de emojis
@@ -43,3 +44,7 @@ else:
 
     if pagina == "Listar Usuários":
         pagina_listar()
+    elif pagina == "Criar Usuário":
+        pagina_criar()
+
+    
