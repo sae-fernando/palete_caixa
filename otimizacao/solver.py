@@ -142,10 +142,10 @@ def resolver(
     )
 
     # ── Resolução (N soluções distintas) ─────────────────────────────────────
-    # solver_obj = plp.getSolver("PULP_CBC_CMD", msg=0)
+    solver_obj = plp.getSolver("PULP_CBC_CMD", msg=0)
     diretorio_tmp = tempfile.TemporaryDirectory(prefix="palete_caixa_")
-    solver_obj = plp.COIN_CMD(path="/opt/homebrew/bin/cbc", msg=0)
-    solver_obj.tmpDir = diretorio_tmp.name
+    # solver_obj = plp.COIN_CMD(path="/opt/homebrew/bin/cbc", msg=0)
+    # solver_obj.tmpDir = diretorio_tmp.name
     if tempo_limite is not None:
         solver_obj.timeLimit = tempo_limite
 
